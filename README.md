@@ -30,11 +30,13 @@ This & That Collection is a web application designed to showcase a curated selec
    
 
 3. **Products Page slide 1**
+   
    ![Products Page](products1_page.png)
 
    
 
-4. **Products Page slide 2**
+5. **Products Page slide 2**
+   
    ![Products Page slide 2](products2_page.png)
 
    
