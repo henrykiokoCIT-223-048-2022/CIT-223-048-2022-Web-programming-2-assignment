@@ -28,19 +28,19 @@ This & That Collection is a web application designed to showcase a curated selec
    ![Home Page](About_page.png)
 
 2. **Products Page slide 1**
-   ![Products Page](products1_page)
+   ![Products Page](products1_page.png)
 
 3. **Products Page slide 2**
-   ![Products Page slide 2](products2_page)
+   ![Products Page slide 2](products2_page.png)
 
 5. **Enquiries & Suggestions Page**
-   ![Enquiries & Suggestions Page](enquiries_page)
+   ![Enquiries & Suggestions Page](enquiries_page.png)
 
 6. **Contacts Page**
-   ![Contacts Page](contactus_page)
+   ![Contacts Page](contactus_page.png)
 
 7. **Testimonials Page**
-   ![Testimonials Page](testimonials_page)
+   ![Testimonials Page](testimonials_page.png)
 
 
 
