@@ -22,6 +22,24 @@ This & That Collection is a web application designed to showcase a curated selec
 3. On the **Testimonials Page**, read feedback from other customers and submit your own testimonial.
 4. Use the **Enquiries & Suggestions Page** to send messages to the business.
 
+## Screenshots of the Pages
+
+1. **Home Page**
+   ![Home Page](home_page)
+
+2. **Products Page**
+   ![Products Page](products1_page.png , products2_page.png)
+
+3. **Enquiries & Suggestions Page**
+   ![Enquiries & Suggestions Page](enquiries_page.png)
+
+4. **Contacts Page**
+   ![Contacts Page](contact us_page.png)
+
+5. **Testimonials Page**
+   ![Testimonials Page](testimonials_page.png)
+
+
 
 ## Author
 Henry Kioko  
