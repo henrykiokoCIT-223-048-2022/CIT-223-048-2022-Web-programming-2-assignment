@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIT-223-048/2022 MALUSI HENRY KIOKO - Products</title>
+<style>
+  /* General Styles */
+  body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  /* Logo Styles */
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+  }
+  /* Navigation Styles */
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  nav li a:hover {
+    color: #666;
+  }
+  /* Content Styles */
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  /* Product Styles */
+  .product {
+    margin-bottom: 30px;
+  }
+  .product img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .product h5 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .product p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+  }
+  .add-to-cart {
+    background-color: #af4c72;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .add-to-cart:hover {
+    background-color: #458ba0;
+  }
+  /* Cart Styles */
+  .cart {
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  .cart h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .cart-item {
+    margin-bottom: 15px;
+  }
+  .cart-item p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+  }
+  .total {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  /* Order Button */
+  .order-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .order-btn:hover {
+    background-color: #45a049;
+  }
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="logo.png" alt="Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a class="active" href="product.html">Products</a></li>
+      <li><a href="enquire.html">Enquiries & Suggestions</a></li>
+      <li><a href="about.html">Contacts</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1 class="heading">Products</h1>
+    <p class="subheading">Browse Our Collection</p>
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="glasses.jpeg" alt="Glasses">
+      <h5>Glasses - Ksh 300</h5>
+      <p>Stay stylish and protect your eyes with our trendy glasses. Available in various designs and colors.</p>
+      <button class="add-to-cart" onclick="addToCart('Glasses', 300)">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="watch.jpeg" alt="Watch">
+      <h5>Watch - Ksh 400</h5>
+      <p>Keep track of time in style with our elegant watches. Crafted with precision and sophistication.</p>
+      <button class="add-to-cart" onclick="addToCart('Watch', 400)">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="ear_rings.jpeg" alt="Earrings">
+      <h5>Earrings - Ksh 50</h5>
+      <p>Enhance your look with our exquisite earrings. Perfect for adding a touch of glamour to any outfit.</p>
+      <button class="add-to-cart" onclick="addToCart('Earrings', 50)">Add to Cart</button>
+    </div>
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="head_massager.jpeg" alt="Head Massager">
+      <h5>Head Massager - Ksh 200</h5>
+      <p>Relax and relieve stress with our innovative head massager. Enjoy a soothing massage anytime, anywhere.</p>
+      <button class="add-to-cart" onclick="addToCart('Head Massager', 200)">Add to Cart</button>
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="smart_watch.jpeg" alt="Smart Watch">
+      <h5>Smart Watch - Ksh 3000</h5>
+      <p>Stay connected and track your fitness goals with our smartwatches. The ultimate companion for modern living.</p>
+      <button class="add-to-cart" onclick="addToCart('Smart Watch', 3000)">Add to Cart</button>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <div id="cart-items"></div>
+      <div class="total" id="total-display">Total: Ksh 0</div>
+      <button class="order-btn" onclick="placeOrder()">Order</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2022 Your Company. All Rights Reserved.</p>
+</footer>
+
+<script>
+  let cart = [];
+  let total = 0;
+
+  function addToCart(product, price) {
+    cart.push({ product, price });
+    total += price;
+    updateCart();
+  }
+
+  function removeFromCart(product) {
+    cart = cart.filter(item => item.product !== product);
+    updateCart();
+  }
+
+  function updateCart() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    cartItemsDiv.innerHTML = ''; // Clear existing items
+    cart.forEach(item => {
+      const cartItem = document.createElement('div');
+      cartItem.className = 'cart-item';
+      cartItem.innerHTML = `
+        <p>${item.product} - Ksh ${item.price} <button class="remove-from-cart" onclick="removeFromCart('${item.product}')">Remove</button></p>
+      `;
+      cartItemsDiv.appendChild(cartItem);
+    });
+    document.getElementById('total-display').innerText = `Total: Ksh ${total}`;
+  }
+
+  function placeOrder() {
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+      return;
+    }
+    alert("Order placed successfully!");
+    // Clear cart after placing the order
+    cart = [];
+    total = 0;
+    updateCart();
+  }
+</script>
+
+</body>
+</html>
