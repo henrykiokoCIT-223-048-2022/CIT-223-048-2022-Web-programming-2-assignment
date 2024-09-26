@@ -25,7 +25,7 @@ This & That Collection is a web application designed to showcase a curated selec
 ## Screenshots of the Pages
 
 1. **Home Page**
-   ![Home Page](About_page.png)
+   ![About Page](About_page.png)
 
    
 
@@ -38,17 +38,15 @@ This & That Collection is a web application designed to showcase a curated selec
    ![Products Page slide 2](products2_page.png)
 
    
-
 6. **Enquiries & Suggestions Page**
+   
    ![Enquiries & Suggestions Page](Enquiries_page.png)
 
    
-
 8. **Contacts Page**
    ![Contacts Page](contact_us_page.png)
 
    
-
 10. **Testimonials Page**
    ![Testimonials Page](Testimonials_page.png)
 
