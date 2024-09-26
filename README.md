@@ -37,7 +37,7 @@ This & That Collection is a web application designed to showcase a curated selec
    ![Enquiries & Suggestions Page](Enquiries_page.png)
 
 6. **Contacts Page**
-   ![Contacts Page](contact us_page.png)
+   ![Contacts Page](contact_us_page.png)
 
 7. **Testimonials Page**
    ![Testimonials Page](Testimonials_page.png)
