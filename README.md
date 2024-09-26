@@ -18,9 +18,9 @@ This & That Collection is a web application designed to showcase a curated selec
 
 ## How to Use
 1. Navigate through the website using the menu bar to access different sections.
-2. On the **Products Page**, browse through the displayed items.
+2. On the **Products Page**, browse through the displayed items. Add to cart and order the products you are interested in
 3. On the **Testimonials Page**, read feedback from other customers and submit your own testimonial.
-4. Use the **Enquiries & Suggestions Page** to send messages to the business.
+4. Use the **Enquiries & Suggestions Page** to fill in your details and send messages to the business.
 
 ## Screenshots of the Pages
 
