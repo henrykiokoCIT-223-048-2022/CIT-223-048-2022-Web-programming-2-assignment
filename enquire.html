@@ -161,7 +161,6 @@
         <option value="tanzania" data-code="+255">Tanzania</option>
       </select>
 
-      <!-- Phone Number Section with Country Code -->
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
 
@@ -172,7 +171,7 @@
       <textarea id="enquiries" name="enquiries" placeholder="Enter your enquiries or suggestions..."></textarea>
 
       <p>DAMAGED PRODUCTS</p>
-      <label for="pic">Upload a picture of The damaged product</label>
+      <label for="pic">Upload a picture of The damaged product(optional)</label>
       <input type="file" id="pic" name="pic">
 
       <label for="satisfaction">Satisfaction Level (1-100): <span id="satisfactionValue">50</span></label>
@@ -217,15 +216,14 @@
     var selectedOption = countrySelect.options[countrySelect.selectedIndex];
     var countryCode = selectedOption.getAttribute("data-code");
 
-    // Set phone field to the correct country code
     var phoneField = document.getElementById("phone");
     phoneField.value = countryCode + " ";
   }
 
   function clearForm() {
-    // Clear all form inputs
+
     document.getElementById("enquiryForm").reset();
-    // Reset the satisfaction value display
+    
     document.getElementById("satisfactionValue").textContent = '50';
   }
 </script>
