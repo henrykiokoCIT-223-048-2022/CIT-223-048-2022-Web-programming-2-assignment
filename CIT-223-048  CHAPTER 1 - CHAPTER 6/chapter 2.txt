@@ -1,0 +1,60 @@
+1.  Write a simple PHP program to print your BIODATA on the browser screen. 
+	<?php	
+	$name = "Henry Kioko";
+	$age = 20;
+	$age = 20;
+	$gender = "Male";
+	$height = "177 cm";
+	$course = "Bachelor of Computer Science";
+	$university = "Multimedia University of Kenya";
+	$dob = "February 24, 2004";
+	$nationality = "Kenyan";
+	echo "<h1>BIODATA</h1>";
+	echo "<p>	<b>Name:</b>" .$name;
+	echo "<p><b>Age:</b>" .$age;
+	echo "<p><b>Height:</b>" .$height;
+	echo "<p><b>Gender:</b>" .$gender;
+	echo "<p><b>Nationality:</b>" .$nationality;
+	echo "<p><b>University:</b>" .$university;
+	echo "<p><b>Course:</b>" .$course,"</p>";
+	echo "<p><b>Date of birth: </b>".$dob;
+	?>
+
+2.  Elaborate the Error(s) in the code below (if any). 
+<?php  
+   / This is a comment for PHPprogram                
+   echo "Display first line </br>"; 
+   echo "Display second line </br> " 
+   Print "Display third line with print statement "; 
+?>
+
+Errors:
+	(i)Comment Syntax Error: The comment / This is a comment for PHP program is incorrect. PHP comments start with // for single-line comments or /* */ for multi-line comments.
+	(ii)Missing Semicolon: After the second echo statement (echo "Display second line </br> "), a semicolon (;) is missing.
+	(iii)Use of print instead of echo in the fifth line
+
+3. Write down the correct code of above program.
+
+	<?php  
+	  // This is a comment for PHP program 
+	   echo "Display first line </br>"; 
+	   echo "Display second line </br>"; 
+	   print "Display third line with print statement"; 
+	?>
+
+4. Mention the output of the above code.
+
+	Display first line
+	Display second line
+	Display third line with print statement
+
+
+5. Write PHP code to display any text on the browser uses HTML formatting tags within the 
+echo statements.
+
+	<?php
+	echo "<h1>Welcome to My Webpage</h1>";
+	echo "<p><b>This is a bold statement.</b></p>";
+	echo "<p><em>This text is italicized.</em></p>";
+	echo "<u>This sentence is underlined</u>
+	?>

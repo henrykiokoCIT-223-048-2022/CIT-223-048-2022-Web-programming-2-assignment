@@ -1,0 +1,23 @@
+CIT-223-048/2022
+MALUSI HENRY KIOKO
+CHAPTER 1 ASSIGNMENT
+Practical Questions
+1.	Write steps of xampp installation or setup process. 
+i)Download the XAMPP package from the official website.
+(ii)Run the installer and select the components you wish to install (e.g., Apache, MySQL, PHP, etc.).
+(iii)Choose the installation directory (e.g., C:\xampp).
+(iv)Click 'Next' and wait for the installation to complete.
+(v)Launch the XAMPP Control Panel and start the Apache and MySQL services.
+(vi)Open a browser and type localhost or 127.0.0.1 to check if the installation is successful.
+
+
+
+2.	 Write PHP code to display your Roll Number, Course Name and Technology Name on the browser.
+<?php
+$rollNumber = "CIT-223-048/2022";
+$courseName = "Bachelor of Science in Computer Science";
+$technologyName = "Web Programming 2 using PHP";
+echo "<h2>Roll Number: $rollNumber</h2>";
+echo "<h2>Course Name: $courseName</h2>";
+echo "<h2>Technology Name: $technologyName</h2>";
+?>

@@ -1,0 +1,49 @@
+1. Write a simple program of the following output using Constants. 
+ Employee code is 001 
+ Employee Name is ABC 
+ Employee Salary is 25000 
+ Working Hours are 7.5 
+
+	<?php
+	define("EMPLOYEE_CODE", "001");
+	define("EMPLOYEE_NAME", "ABC");
+	define("EMPLOYEE_SALARY", 25000);
+	define("WORKING_HOURS", 7.5);
+	echo "Employee code is " . EMPLOYEE_CODE . "<br>";
+	echo "Employee Name is " . EMPLOYEE_NAME . "<br>";
+	echo "Employee Salary is " . EMPLOYEE_SALARY . "<br>";
+	echo "Working Hours are " . WORKING_HOURS . "<br>";
+	?>
+
+2. Repeat the above program using Variables.  Hint:  Save the given data at 4 memory locations respectively and print on the screen.
+
+	<?php
+	$employee_code = "001";
+	$employee_name = "ABC";
+	$employee_salary = 25000;
+	$working_hours = 7.5;
+	echo "Employee code is " . $employee_code . "<br>";
+	echo "Employee Name is " . $employee_name . "<br>";
+	echo "Employee Salary is " . $employee_salary . "<br>";
+	echo "Working Hours are " . $working_hours . "<br>";
+	?>
+
+3. How do you make a constant name case insensitive? 
+	By adding a third parameter to the define() function and setting it to true. e.g define("EMPLOYEE_NAME", "ABC", true);
+
+
+4. How do you declare a constant in PHP with example? 
+	 using the define() function. 
+	e.g: define("COMPANY_NAME", "Tech Solutions");
+
+5. Write make a simple program to set your G.R No. and Name in the variables and display G.R 
+No. and name by echo and print functions.
+
+	<?php
+	$gr_no = "GR12345";
+	$name = "Henry Kioko";
+	echo "G.R No: " . $gr_no . "<br>";
+	echo "Name: " . $name . "<br>";
+	print "G.R No: " . $gr_no . "<br>";
+	print "Name: " . $name . "<br>";
+	?>

@@ -1,0 +1,275 @@
+Practical Questions
+1.Write a simple program to construct a Calculator that can perform Basic operation Mathematical operation as well. 
+<?php
+$num1 = 10;
+$num2 = 20;
+$operation = '+';
+switch ($operation) {
+    case '+':
+        $result = $num1 + $num2;
+        break;
+    case '-':
+        $result = $num1 - $num2;
+        break;
+    case '*':
+        $result = $num1 * $num2;
+        break;
+    case '/':
+        $result = ($num2 != 0) ? $num1 / $num2 : "Division by zero error!";
+        break;
+    default:
+        $result = "Invalid operation!";
+}
+
+echo "Result: " . $result;
+?>
+
+
+
+
+2.	Write a simple program to check an alphabet entered by user is a Vowel or not using if statement, if else if else statement and switch case statements. If Statement If else if Statement Switch Case 
+Using if statement:
+<html>
+<head>
+    <title>Check Vowel using If Statement</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="alphabet">Enter an Alphabet:</label>
+        <input type="text" id="alphabet" name="alphabet" required maxlength="1" pattern="[A-Za-z]">
+        <input type="submit" value="Check">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $alphabet = strtolower($_POST['alphabet']); 
+
+        if ($alphabet == 'a' || $alphabet == 'e' || $alphabet == 'i' || $alphabet == 'o' || $alphabet == 'u') {
+            echo "<h3>Using If Statement: '$alphabet' is a Vowel.</h3>";
+        } else {
+            echo "<h3>Using If Statement: '$alphabet' is not a Vowel.</h3>";
+        }
+    }
+    ?>
+</body>
+</html>
+
+Using if-else if-else statement:
+<html>
+<head>
+    <title>Check Vowel using If-Else If-Else Statement</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="alphabet">Enter an Alphabet:</label>
+        <input type="text" id="alphabet" name="alphabet" required maxlength="1" pattern="[A-Za-z]">
+        <input type="submit" value="Check">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $alphabet = strtolower($_POST['alphabet']); 
+
+        // Using If-Else If-Else Statement
+        if ($alphabet == 'a') {
+            echo "<h3>Using If-Else If-Else Statement: '$alphabet' is a Vowel.</h3>";
+        } else if ($alphabet == 'e') {
+            echo "<h3>Using If-Else If-Else Statement: '$alphabet' is a Vowel.</h3>";
+        } else if ($alphabet == 'i') {
+            echo "<h3>Using If-Else If-Else Statement: '$alphabet' is a Vowel.</h3>";
+        } else if ($alphabet == 'o') {
+            echo "<h3>Using If-Else If-Else Statement: '$alphabet' is a Vowel.</h3>";
+        } else if ($alphabet == 'u') {
+            echo $alphabet, “is a Vowel.</h3>";
+        } else {
+            echo $alphabet, ” is not a Vowel.</h3>";
+        }
+    }
+    ?>
+</body>
+</html>
+
+Using switch statement:
+<html>
+<head>
+    <title>Check Vowel using Switch Case Statement</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <label for="alphabet">Enter an Alphabet:</label>
+        <input type="text" id="alphabet" name="alphabet" required maxlength="1" pattern="[A-Za-z]">
+        <input type="submit" value="Check">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $alphabet = strtolower($_POST['alphabet']); 
+
+        switch ($alphabet) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                echo "<h3>Using Switch Case: '$alphabet' is a Vowel.</h3>";
+                break;
+            default:
+                echo "<h3>Using Switch Case: '$alphabet' is not a Vowel.</h3>";
+        }
+    }
+    ?>
+</body>
+</html>
+
+
+
+
+
+3.	Write a code to check an integer number entered by user is Even or Odd using Conditional operator statement. 
+<html>
+<head>
+    <title>Check Even or Odd</title>
+</head>
+<body>
+    <h2>Check if a Number is Even or Odd</h2>
+    <form action="" method="POST">
+        <label for="number">Enter an Integer:</label>
+        <input type="number" id="number" name="number" required>
+        <input type="submit" value="Check">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $number = intval($_POST['number']); // Get the entered number
+
+        // Using Conditional (Ternary) Operator
+        $result = ($number % 2 == 0) ? "$number is Even." : "$number is Odd.";
+        echo "<h3>Result: $result</h3>";
+    }
+    ?>
+</body>
+</html>
+
+
+
+
+
+
+
+4.	Write a program to input subject marks Math, English and Physics then to prepare marks sheet of a student that will show the Obtain marks, percentage and grade.
+<?php
+$math = 85;
+$english = 90;
+$physics = 80;
+
+$total_marks = 300; // Assuming each subject has max 100 marks
+$obtained_marks = $math + $english + $physics;
+$percentage = ($obtained_marks / $total_marks) * 100;
+
+echo "Obtained Marks: $obtained_marks\n";
+echo "Percentage: $percentage%\n";
+
+if ($percentage >= 70) {
+    echo "Grade: A";
+} elseif ($percentage >= 60) {
+    echo "Grade: B";
+} elseif ($percentage >= 50) {
+    echo "Grade: C";
+} elseif ($percentage >=40) {
+    echo "Grade: D";
+}
+else {
+    echo "Grade: D";
+}
+
+?>
+
+
+
+
+5.Write a program that input a number, then report whether the number is in the range from 1 to 100. Otherwise the number above to 100.
+<html>
+<head>
+    <title>Check Number Range</title>
+</head>
+<body>
+    <h2>Check if a Number is in the Range of 1 to 100</h2>
+    <form action="" method="POST">
+        <label for="number">Enter a Number:</label>
+        <input type="number" id="number" name="number" required>
+        <input type="submit" value="Check">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the entered number
+        $number = intval($_POST['number']); 
+
+        // Check the range of the number
+        if ($number >= 1 && $number <= 100) {
+            echo "<h3>$number is in the range of 1 to 100.</h3>";
+        } elseif ($number > 100) {
+            echo "<h3>$number is above 100.</h3>";
+        } else {
+            echo "<h3>$number is below 1.</h3>";
+        }
+    }
+    ?>
+</body>
+</html>6. The following is supposed to cause an action or print message, whenever x is 5 and y is 9. 
+<?php 
+If ( $x >= $y ) 
+echo “x is greater than y” 
+else 
+echo “y is greater than x “; 
+
+
+
+
+6. Write a switch statement that output messages indicating what day has been numerically input (for example 1-> Monday, 2-> Tuesday, 3-> Wednesday,...)
+
+<html>
+<head>
+    <title>Day of the Week</title>
+</head>
+<body>
+    <form method="post" action="">
+        <label for="number">Number:</label>
+        <input type="text" name="number" id="number">
+        <button type="submit">Submit</button>
+    </form>
+    <?php
+        if (isset($_POST['number'])) {
+            $dayNumber = intval($_POST['number']);
+
+            switch ($dayNumber) {
+                case 1:
+                    echo "Monday";
+                    break;
+                case 2:
+                    echo "Tuesday";
+                    break;
+                case 3:
+                    echo "Wednesday";
+                    break;
+                case 4:
+                    echo "Thursday";
+                    break;
+                case 5:
+                    echo "Friday";
+                    break;
+                case 6:
+                    echo "Saturday";
+                    break;
+                case 7:
+                    echo "Sunday";
+                    break;
+                default:
+                    echo "Invalid day number";
+                    break;
+            }
+        }
+    ?>
+</body>
+</html>
+
